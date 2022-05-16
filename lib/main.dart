@@ -176,11 +176,31 @@ class _HomeState extends State<Home> {
               },
               child: const Text('8.Sınıf'),
             ),
-            TextButton(
-                onPressed: () {
-                  exit(0);
-                },
-                child: const Text("ÇIKIŞ"))
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+
+                TextButton(
+                    onPressed: () async {
+                      await widget.browser.open(
+                          url: Uri.parse(
+                              "https://aliesatgungor.com"),
+                          options: ChromeSafariBrowserClassOptions(
+                              android: AndroidChromeCustomTabsOptions(
+                                  shareState:
+                                      CustomTabsShareState.SHARE_STATE_OFF),
+                              ios: IOSSafariOptions(
+                                  barCollapsingEnabled: true)));
+                    },
+                    child: const Text("Geliştirici Web Sitesi")),
+                TextButton(
+                    onPressed: () {
+                      exit(0);
+                    },
+                    child: const Text("ÇIKIŞ")),
+              ],
+            )
           ],
         ),
       ),
@@ -672,7 +692,7 @@ class _Screen6State extends State<Screen6> {
                         options: ChromeSafariBrowserClassOptions(
                             android: AndroidChromeCustomTabsOptions(
                                 shareState:
-                                CustomTabsShareState.SHARE_STATE_OFF),
+                                    CustomTabsShareState.SHARE_STATE_OFF),
                             ios: IOSSafariOptions(barCollapsingEnabled: true)));
                   },
                   child: const Text("FEN BİLİMLERİ"))
@@ -764,7 +784,7 @@ class _Screen7State extends State<Screen7> {
                         options: ChromeSafariBrowserClassOptions(
                             android: AndroidChromeCustomTabsOptions(
                                 shareState:
-                                CustomTabsShareState.SHARE_STATE_OFF),
+                                    CustomTabsShareState.SHARE_STATE_OFF),
                             ios: IOSSafariOptions(barCollapsingEnabled: true)));
                   },
                   child: const Text("FEN BİLİMLERİ"))
@@ -856,7 +876,7 @@ class _Screen8State extends State<Screen8> {
                         options: ChromeSafariBrowserClassOptions(
                             android: AndroidChromeCustomTabsOptions(
                                 shareState:
-                                CustomTabsShareState.SHARE_STATE_OFF),
+                                    CustomTabsShareState.SHARE_STATE_OFF),
                             ios: IOSSafariOptions(barCollapsingEnabled: true)));
                   },
                   child: const Text("FEN BİLİMLERİ"))
