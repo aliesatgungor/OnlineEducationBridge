@@ -253,8 +253,7 @@ class _Screen2State extends State<Screen2> {
                       borderRadius: BorderRadius.circular(0))),
               onPressed: () async {
                 await widget.browser.open(
-                    url: Uri.parse(
-                        "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-matematik/"),
+                    url: Uri.parse("https://www.dersizleyin.com/kategori/ilkokul/1-sinif/matematik-1/"),
                     options: ChromeSafariBrowserClassOptions(
                         android: AndroidChromeCustomTabsOptions(
                             shareState: CustomTabsShareState.SHARE_STATE_OFF),
