@@ -179,13 +179,10 @@ class _HomeState extends State<Home> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-
-
                 TextButton(
                     onPressed: () async {
                       await widget.browser.open(
-                          url: Uri.parse(
-                              "https://aliesatgungor.com"),
+                          url: Uri.parse("https://aliesatgungor.com"),
                           options: ChromeSafariBrowserClassOptions(
                               android: AndroidChromeCustomTabsOptions(
                                   shareState:
@@ -253,7 +250,8 @@ class _Screen2State extends State<Screen2> {
                       borderRadius: BorderRadius.circular(0))),
               onPressed: () async {
                 await widget.browser.open(
-                    url: Uri.parse("https://www.dersizleyin.com/kategori/ilkokul/1-sinif/matematik-1/"),
+                    url: Uri.parse(
+                        "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/matematik-1/"),
                     options: ChromeSafariBrowserClassOptions(
                         android: AndroidChromeCustomTabsOptions(
                             shareState: CustomTabsShareState.SHARE_STATE_OFF),
