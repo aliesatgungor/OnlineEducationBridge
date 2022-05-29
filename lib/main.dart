@@ -6,23 +6,21 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 class MyChromeSafariBrowser extends ChromeSafariBrowser {
   @override
   void onOpened() {
-    if (kDebugMode) {
-      print("ChromeSafari browser opened");
-    }
+    print("ChromeSafari browser opened");
   }
 
   @override
   void onCompletedInitialLoad() {
-    if (kDebugMode) {
+
       print("ChromeSafari browser initial load completed");
-    }
+
   }
 
   @override
   void onClosed() {
-    if (kDebugMode) {
+
       print("ChromeSafari browser closed");
-    }
+
   }
 }
 
@@ -215,7 +213,7 @@ class Screen2 extends StatefulWidget {
 
 class _Screen2State extends State<Screen2> {
   var options = InAppBrowserClassOptions(
-      crossPlatform: InAppBrowserOptions(hideUrlBar: false),
+      crossPlatform: InAppBrowserOptions(hideUrlBar: true),
       inAppWebViewGroupOptions: InAppWebViewGroupOptions(
           crossPlatform: InAppWebViewOptions(javaScriptEnabled: true)));
   @override
@@ -292,7 +290,7 @@ class Screen3 extends StatefulWidget {
 
 class _Screen3State extends State<Screen3> {
   var options = InAppBrowserClassOptions(
-      crossPlatform: InAppBrowserOptions(hideUrlBar: false),
+      crossPlatform: InAppBrowserOptions(hideUrlBar: true),
       inAppWebViewGroupOptions: InAppWebViewGroupOptions(
           crossPlatform: InAppWebViewOptions(javaScriptEnabled: true)));
   @override
