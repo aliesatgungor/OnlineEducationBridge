@@ -22,7 +22,7 @@ class MyChromeSafariBrowser extends ChromeSafariBrowser {
       print("ChromeSafari browser closed");
 
   }
-}
+} //Debug mod için
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
