@@ -253,7 +253,7 @@ class _Screen2State extends State<Screen2> {
                   onPressed: () async {
                     await widget.browser.open(
                         url: Uri.parse(
-                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-okuma-yazma/"),
+                            "https://www.testlericoz.com/testler/1-sinif-turkce"),
                         options: ChromeSafariBrowserClassOptions(
                             android: AndroidChromeCustomTabsOptions(
                                 shareState: CustomTabsShareState.SHARE_STATE_OFF),
@@ -291,7 +291,7 @@ class _Screen2State extends State<Screen2> {
                   onPressed: () async {
                     await widget.browser.open(
                         url: Uri.parse(
-                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/matematik-1/"),
+                            "https://www.testlericoz.com/testler/1-sinif-matematik"),
                         options: ChromeSafariBrowserClassOptions(
                             android: AndroidChromeCustomTabsOptions(
                                 shareState: CustomTabsShareState.SHARE_STATE_OFF),
@@ -329,7 +329,7 @@ class _Screen2State extends State<Screen2> {
                   onPressed: () async {
                     await widget.browser.open(
                         url: Uri.parse(
-                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-hayat-bilgisi/"),
+                            "https://www.testlericoz.com/testler/1-sinif-hayat-bilgisi"),
                         options: ChromeSafariBrowserClassOptions(
                             android: AndroidChromeCustomTabsOptions(
                                 shareState: CustomTabsShareState.SHARE_STATE_OFF),
