@@ -225,53 +225,119 @@ class _Screen2State extends State<Screen2> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(180, 90),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0))),
-              onPressed: () async {
-                await widget.browser.open(
-                    url: Uri.parse(
-                        "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-okuma-yazma/"),
-                    options: ChromeSafariBrowserClassOptions(
-                        android: AndroidChromeCustomTabsOptions(
-                            shareState: CustomTabsShareState.SHARE_STATE_OFF),
-                        ios: IOSSafariOptions(barCollapsingEnabled: true)));
-              },
-              child: const Text("OKUMA YAZMA"),
+            Text("Türkçe"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(180, 90),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0))),
+                  onPressed: () async {
+                    await widget.browser.open(
+                        url: Uri.parse(
+                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-okuma-yazma/"),
+                        options: ChromeSafariBrowserClassOptions(
+                            android: AndroidChromeCustomTabsOptions(
+                                shareState: CustomTabsShareState.SHARE_STATE_OFF),
+                            ios: IOSSafariOptions(barCollapsingEnabled: true)));
+                  },
+                  child: const Text("Konu Anlatımı"),
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(180, 90),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0))),
+                  onPressed: () async {
+                    await widget.browser.open(
+                        url: Uri.parse(
+                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-okuma-yazma/"),
+                        options: ChromeSafariBrowserClassOptions(
+                            android: AndroidChromeCustomTabsOptions(
+                                shareState: CustomTabsShareState.SHARE_STATE_OFF),
+                            ios: IOSSafariOptions(barCollapsingEnabled: true)));
+                  },
+                  child: const Text("Testler"),
+                ),
+              ],
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(180, 90),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0))),
-              onPressed: () async {
-                await widget.browser.open(
-                    url: Uri.parse(
-                        "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/matematik-1/"),
-                    options: ChromeSafariBrowserClassOptions(
-                        android: AndroidChromeCustomTabsOptions(
-                            shareState: CustomTabsShareState.SHARE_STATE_OFF),
-                        ios: IOSSafariOptions(barCollapsingEnabled: true)));
-              },
-              child: const Text("  MATEMATİK  "),
+            Text("Matematik"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(180, 90),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0))),
+                  onPressed: () async {
+                    await widget.browser.open(
+                        url: Uri.parse(
+                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/matematik-1/"),
+                        options: ChromeSafariBrowserClassOptions(
+                            android: AndroidChromeCustomTabsOptions(
+                                shareState: CustomTabsShareState.SHARE_STATE_OFF),
+                            ios: IOSSafariOptions(barCollapsingEnabled: true)));
+                  },
+                  child: const Text("Konu Anlatımı"),
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(180, 90),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0))),
+                  onPressed: () async {
+                    await widget.browser.open(
+                        url: Uri.parse(
+                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/matematik-1/"),
+                        options: ChromeSafariBrowserClassOptions(
+                            android: AndroidChromeCustomTabsOptions(
+                                shareState: CustomTabsShareState.SHARE_STATE_OFF),
+                            ios: IOSSafariOptions(barCollapsingEnabled: true)));
+                  },
+                  child: const Text("Testler"),
+                )
+              ],
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(180, 90),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0))),
-              onPressed: () async {
-                await widget.browser.open(
-                    url: Uri.parse(
-                        "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-hayat-bilgisi/"),
-                    options: ChromeSafariBrowserClassOptions(
-                        android: AndroidChromeCustomTabsOptions(
-                            shareState: CustomTabsShareState.SHARE_STATE_OFF),
-                        ios: IOSSafariOptions(barCollapsingEnabled: true)));
-              },
-              child: const Text("HAYAT BİLGİSİ"),
+            Text("Hayat Bilgisi"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(180, 90),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0))),
+                  onPressed: () async {
+                    await widget.browser.open(
+                        url: Uri.parse(
+                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-hayat-bilgisi/"),
+                        options: ChromeSafariBrowserClassOptions(
+                            android: AndroidChromeCustomTabsOptions(
+                                shareState: CustomTabsShareState.SHARE_STATE_OFF),
+                            ios: IOSSafariOptions(barCollapsingEnabled: true)));
+                  },
+                  child: const Text("Konu Anlatımı"),
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(180, 90),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(0))),
+                  onPressed: () async {
+                    await widget.browser.open(
+                        url: Uri.parse(
+                            "https://www.dersizleyin.com/kategori/ilkokul/1-sinif/1-sinif-hayat-bilgisi/"),
+                        options: ChromeSafariBrowserClassOptions(
+                            android: AndroidChromeCustomTabsOptions(
+                                shareState: CustomTabsShareState.SHARE_STATE_OFF),
+                            ios: IOSSafariOptions(barCollapsingEnabled: true)));
+                  },
+                  child: const Text("Testler"),
+                )
+              ],
             )
           ],
         ),
