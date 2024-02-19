@@ -180,7 +180,7 @@ class _HomeState extends State<Home> {
                 TextButton(
                     onPressed: () async {
                       await widget.browser.open(
-                          url: Uri.parse("https://aliesatgungor.com"),
+                          url: Uri.parse("https://aliesatgungor.com/hi"),
                           options: ChromeSafariBrowserClassOptions(
                               android: AndroidChromeCustomTabsOptions(
                                   shareState:
